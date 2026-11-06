@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: >-
+  If you use this implementation, please cite the software repository.
+  The associated research manuscript has been submitted for publication.
+title: "RoboSAPIENS Temporal Policy Selection: INTO-CPS Webots Case Study"
+type: software
+authors:
+  - family-names: Tosidis
+    given-names: Pavlos
+  - family-names: Passalis
+    given-names: Nikolaos
+  - family-names: Tefas
+    given-names: Anastasios
+version: "0.1.0"
+keywords:
+  - robotics
+  - deep reinforcement learning
+  - anomaly detection
+  - temporal policy selection
+  - MAPE-K
+  - Webots

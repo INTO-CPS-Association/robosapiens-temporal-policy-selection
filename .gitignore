@@ -1,0 +1,45 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+
+# Machine-local settings and private credentials
+.env
+.env.*
+*.pem
+*.key
+configs/policy_library.json
+
+# Locally generated artifacts
+/datasets/
+/outputs/
+/runs/
+/logs/
+/wandb/
+/tensorboard/
+/checkpoints/
+*.log
+*.monitor.csv
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.onnx
+*.npz
+*.npy
+*.mp4
+*.avi
+
+# SB3 model snapshots, compressed artifacts
+*.zip
+
+# System
+.DS_Store
+Thumbs.db

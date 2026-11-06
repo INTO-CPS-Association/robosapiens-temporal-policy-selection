@@ -1,0 +1,34 @@
+#VRML_SIM R2023b utf8
+
+PROTO human_new_1 [
+  field SFVec3f translation 0 0 0.85
+  field SFRotation rotation 1 0 0 1.57
+  field SFString name "human_new_1"
+  field SFVec3f scale 1.7 1.7 1.7
+]
+{
+Transform   {
+  translation IS translation
+  rotation IS rotation
+  scale IS scale
+
+    children [
+      CadShape {
+        url "../meshes/human_new_1.obj"
+      }
+    ]
+
+    boundingObject Transform {
+      translation 0 0.9 0
+      children [
+        Box {
+          size 0.6 1.8 0.6
+        }
+      ]
+    }
+
+    physics Physics {
+      mass 70
+    }
+  }
+}

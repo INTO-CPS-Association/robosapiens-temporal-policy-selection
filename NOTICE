@@ -1,0 +1,12 @@
+Temporal Policy Selection for Mobile Robot Navigation under Sensor Anomalies
+Copyright (c) 2026 Pavlos Tosidis and contributors
+
+This INTO-CPS case-study packaging is based on the research software released at:
+https://github.com/Pavlos-Tosidis/temporal-policy-selection
+
+The original project code is licensed under the MIT License; see LICENSE.
+Third-party software, pretrained models, and simulation assets are governed by their respective licenses.
+
+Funding acknowledgment:
+This work was funded by the European Union’s Horizon Europe research and
+innovation programme under grant agreement No. 101133807 (RoboSAPIENS).

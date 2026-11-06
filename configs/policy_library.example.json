@@ -1,0 +1,18 @@
+{
+  "image_lidar_world_info": {
+    "model_path": "../outputs/policies/full/model.zip",
+    "obs_keys": ["image", "lidar", "world_info"]
+  },
+  "image_lidar": {
+    "model_path": "../outputs/policies/image_lidar/model.zip",
+    "obs_keys": ["image", "lidar"]
+  },
+  "image": {
+    "model_path": "../outputs/policies/image/model.zip",
+    "obs_keys": ["image"]
+  },
+  "lidar_world_info": {
+    "model_path": "../outputs/policies/lidar_world_info/model.zip",
+    "obs_keys": ["lidar", "world_info"]
+  }
+}

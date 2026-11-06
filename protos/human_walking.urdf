@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<robot name="/home/pavlos/Desktop/Students/protos/human_walking.urdf" xmlns:xacro="http://ros.org/wiki/xacro">
+  <link name="base_link">
+  </link>
+  <link name="Robert">
+  </link>
+  <joint name="base_link_Robert_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="Robert"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+</robot>

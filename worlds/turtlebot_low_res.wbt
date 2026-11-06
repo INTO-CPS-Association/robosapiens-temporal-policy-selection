@@ -1,0 +1,419 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/living_room_furniture/protos/Armchair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/apartment_structure/protos/Ceiling.proto"
+EXTERNPROTO "../protos/Clock.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/paintings/protos/LandscapePainting.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/paintings/protos/PortraitPainting.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/plants/protos/PottedTree.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/apartment_structure/protos/Radiator.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/Roughcast.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/living_room_furniture/protos/Sofa.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/apartment_structure/protos/Wall.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_11_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_01_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_02_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_03_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_04_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_05_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_06_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_07_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_08_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_09_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_10_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_12_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_13_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_14_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_15_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_16_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_17_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_18_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_19_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_20_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_21_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_22_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_23_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_24_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_25_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_26_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_27_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_28_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_29_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_30_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_31_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_32_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_33_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_34_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_35_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_36_standing.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/robotis/turtlebot/protos/TurtleBot3Burger.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/bounding_objects/protos/PipeBoundingObject.proto"
+EXTERNPROTO "../protos/RobotisLds01.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/advertising_board/protos/AdvertisingBoard.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/cabinet/protos/Cabinet.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/apartment_structure/protos/Door.proto"
+
+WorldInfo {
+  info [
+    "Autonomous Vehicle Simulation"
+    "The simple controller example uses an on-board camera to follow the yellow road lines and a SICK sensor to avoid the obstacles."
+    "The control of the vehicle is done using the driver library."
+    "The vehicle based on the Car PROTO is modelled with realistic physics properties: motor torques, body mass, friction forces, suspensions, etc."
+  ]
+  title "Turtlebot_rooms"
+  gravity 0
+  basicTimeStep 64
+}
+Viewpoint {
+  fieldOfView 0.5
+  orientation -0.4188059510074455 0.11996915443852679 0.9001160910593999 2.5380165671738824
+  position 34.22885452812617 -24.46188507415584 50.84640449938608
+  near 1
+  follow "TurtleBot3Burger"
+  followType "None"
+  followSmoothness 1
+}
+TexturedBackground {
+  texture "empty_office"
+  skybox FALSE
+}
+Fog {
+  color 0.38 0.35 0.32
+  visibilityRange 1000
+}
+Floor {
+  rotation 0 0 1 1.5707963267948966
+  size 20 20
+  appearance Parquetry {
+  }
+}
+DirectionalLight {
+  direction 0 -1 0
+  intensity 2
+}
+DirectionalLight {
+  direction 0 1 0
+  intensity 2
+}
+DirectionalLight {
+  direction -1 0 0
+  intensity 2
+}
+DirectionalLight {
+  direction 1 0 0
+  intensity 2
+}
+DirectionalLight {
+  intensity 2
+}
+DirectionalLight {
+  direction 0 0 1
+}
+DEF radiator_1 Radiator {
+  translation 3.51 -9.8 0.31
+  rotation 0 0 1 -1.5707963267948966
+}
+DEF wall_1 Wall {
+  translation 0 10 0
+  rotation 0 0 1 1.5708
+  size 0.2 20 3
+  appearance DEF app1 Roughcast {
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+DEF wall_3 Wall {
+  translation 0 -10 0
+  rotation 0 0 1 1.5708
+  name "wall(3)"
+  size 0.2 20 3
+  appearance DEF app3 Roughcast {
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+DEF wall_2 Wall {
+  translation -10 0 0
+  name "wall(2)"
+  size 0.2 20 3
+  appearance DEF app2 Roughcast {
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+DEF wall_4 Wall {
+  translation 10 0 0
+  name "wall(1)"
+  size 0.2 20 3
+  appearance DEF app4 Roughcast {
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+DEF ceiling Ceiling {
+  translation 0 0 3
+  size 20 20
+  appearance DEF app5 Roughcast {
+    textureTransform TextureTransform {
+      scale 10 10
+    }
+  }
+}
+DEF clock Clock {
+  translation -9.8 5.62 -1
+}
+DEF lr1 Solid {
+  translation -6 6 0
+  children [
+    DEF armchair_2 Armchair {
+      translation 0 2.05 0
+      name "armchair(3)"
+    }
+    DEF armchair_1 Armchair {
+      translation 0 -1.76 0
+      name "armchair(2)"
+    }
+    DEF sofa Sofa {
+      translation -1.95 0 0
+      name "sofa(1)"
+    }
+  ]
+  name "solid(1)"
+}
+DEF lr2 Solid {
+  translation -6 6 0
+  children [
+    DEF armchair_2 Armchair {
+      translation 0 2.05 0
+      name "armchair(3)"
+    }
+    DEF armchair_1 Armchair {
+      translation 0 -1.76 0
+      name "armchair(2)"
+    }
+    DEF sofa Sofa {
+      translation -1.95 0 0
+      name "sofa(1)"
+    }
+  ]
+  name "solid(3)"
+}
+DEF lr3 Solid {
+  translation -6 6 0
+  children [
+    DEF armchair_2 Armchair {
+      translation 0 2.05 0
+      name "armchair(3)"
+    }
+    DEF armchair_1 Armchair {
+      translation 0 -1.76 0
+      name "armchair(2)"
+    }
+    DEF sofa Sofa {
+      translation -1.95 0 0
+      name "sofa(1)"
+    }
+  ]
+  name "solid(6)"
+}
+DEF paintings_2 Pose {
+  translation -6 0 0
+  children [
+    DEF painting_4 PortraitPainting {
+      translation 0 9.82 1.145
+      rotation 0 0 1 -1.5708
+      name "portrait painting(1)"
+    }
+    DEF painting_3 PortraitPainting {
+      translation 1 9.82 1.925
+      rotation 0 0 1 -1.5708
+    }
+    DEF painting_2 LandscapePainting {
+      translation -0.5 9.87 2.28
+      rotation 0 0 1 -1.5707926535897934
+      name "landscape painting(1)"
+    }
+    DEF painting_1 LandscapePainting {
+      translation -1.5 9.81 1.15
+      rotation 0 0 1 -1.5707926535897934
+    }
+  ]
+}
+DEF paintings_1 Pose {
+  translation -6 0 0
+  rotation 0 0 1 3.141592653589793
+  children [
+    DEF painting_4 PortraitPainting {
+      translation 0 9.82 1.145
+      rotation 0 0 1 -1.5708
+      name "portrait painting(5)"
+    }
+    DEF painting_3 PortraitPainting {
+      translation 1 9.82 1.925
+      rotation 0 0 1 -1.5708
+      name "portrait painting(6)"
+    }
+    DEF painting_2 LandscapePainting {
+      translation -0.5 9.87 2.28
+      rotation 0 0 1 -1.5707926535897934
+      name "landscape painting(2)"
+    }
+    DEF painting_1 LandscapePainting {
+      translation -1.5 9.81 1.15
+      rotation 0 0 1 -1.5707926535897934
+      name "landscape painting(3)"
+    }
+  ]
+}
+DEF billboard Solid {
+  translation 0 6 0
+  children [
+    DEF cabinet Cabinet {
+      translation 9.9 3 0
+      rotation 0 0 1 3.141592653589793
+    }
+    DEF board AdvertisingBoard {
+      translation 9.7 0 1.68
+    }
+  ]
+}
+DEF door Solid {
+  children [
+    DEF radiator_2 Radiator {
+      translation -9.8 -1.63 0.3
+      name "radiator(1)"
+    }
+    DEF door Door {
+      translation -9.8 0 0
+    }
+  ]
+}
+DEF plants1 Solid {
+  translation 0.15 6.36 0
+  children [
+    DEF tree_5 PottedTree {
+      translation 1 -0.95 0
+      name "potted tree(4)"
+    }
+    DEF tree_4 PottedTree {
+      translation 1 1 0
+      name "potted tree(3)"
+    }
+    DEF tree_1 PottedTree {
+      translation -0.68 1.1 0
+    }
+    DEF tree_2 PottedTree {
+      name "potted tree(1)"
+    }
+    DEF tree_3 PottedTree {
+      translation -1 -0.97 0
+      name "potted tree(2)"
+    }
+  ]
+}
+DEF plants2 Solid {
+  translation 0.15 6.36 0
+  children [
+    DEF tree_5 PottedTree {
+      translation 1 -0.95 0
+      name "potted tree(4)"
+    }
+    DEF tree_4 PottedTree {
+      translation 1 1 0
+      name "potted tree(3)"
+    }
+    DEF tree_1 PottedTree {
+      translation -0.68 1.1 0
+    }
+    DEF tree_2 PottedTree {
+      name "potted tree(1)"
+    }
+    DEF tree_3 PottedTree {
+      translation -1 -0.97 0
+      name "potted tree(2)"
+    }
+  ]
+  name "solid(4)"
+}
+DEF plants3 Solid {
+  translation 0.15 6.36 0
+  children [
+    DEF tree_5 PottedTree {
+      translation 1 -0.95 0
+      name "potted tree(4)"
+    }
+    DEF tree_4 PottedTree {
+      translation 1 1 0
+      name "potted tree(3)"
+    }
+    DEF tree_1 PottedTree {
+      translation -0.68 1.1 0
+    }
+    DEF tree_2 PottedTree {
+      name "potted tree(1)"
+    }
+    DEF tree_3 PottedTree {
+      translation -1 -0.97 0
+      name "potted tree(2)"
+    }
+  ]
+  name "solid(5)"
+}
+DEF plants4 Solid {
+  translation 0.15 6.36 0
+  children [
+    DEF tree_5 PottedTree {
+      translation 1 -0.95 0
+      name "potted tree(4)"
+    }
+    DEF tree_4 PottedTree {
+      translation 1 1 0
+      name "potted tree(3)"
+    }
+    DEF tree_1 PottedTree {
+      translation -0.68 1.1 0
+    }
+    DEF tree_2 PottedTree {
+      name "potted tree(1)"
+    }
+    DEF tree_3 PottedTree {
+      translation -1 -0.97 0
+      name "potted tree(2)"
+    }
+  ]
+  name "solid(2)"
+}
+TurtleBot3Burger {
+  translation -7.75978 -1.97 0.0004
+  controller "<extern>"
+  supervisor TRUE
+  extensionSlot [
+    DEF display Display {
+      width 480
+      height 270
+    }
+    RobotisLds01 {
+    }
+    TouchSensor {
+      boundingObject PipeBoundingObject {
+        translation 0 0 -0.03
+        height 0.2
+        radius 0.108
+      }
+    }
+    Camera {
+      translation 0.1 0 0
+      rotation 0 1 0 -0.3927003061004253
+      fieldOfView 2
+      width 480
+      height 270
+    }
+  ]
+}
